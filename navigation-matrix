@@ -1,0 +1,11 @@
+r,c=map(int,input().split())
+mat==[input().split() for i in range(r)]
+x,y=0,0
+while x<r and y<c:
+    print(mat[x][y],end="")
+    if x+1<r and mat[x+1][y].isalpha():
+        x+=1
+    elif y+1<c and mat[x][y+1].isdigit():
+        y+=1
+    else:
+        break
