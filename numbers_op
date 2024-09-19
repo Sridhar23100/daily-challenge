@@ -1,0 +1,12 @@
+n=int(input())
+a=sorted(str(n)) 
+a=''.join(a)
+if n==int(a):
+    print(n)
+else:
+    for i in range(n,int(a),-1): 
+            b=sorted(str(i)) 
+            b=''.join(b) 
+            if i==int(b):
+                print(i)
+                break
